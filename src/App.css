@@ -1,0 +1,55 @@
+.App {
+  border: 1px solid #3d3d3d; 
+  margin: 50px 30px;
+  padding: 25px 15px;
+}
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+}
+.to-do-container ul li {
+  width: 170px;
+  overflow-wrap: break-word;
+  list-style-type: "👉";
+  cursor: pointer;
+} 
+.done {
+  text-decoration: line-through;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.trash {
+  cursor: pointer
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4CAF50; /* يمكن تغيير اللون حسب الرغبة */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #45a049; /* لون عند التمرير فوق الزر */
+}
